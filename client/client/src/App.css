@@ -1,0 +1,121 @@
+/* Reset & Base */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Segoe UI', sans-serif; 
+}
+
+/* Page Background - Blue */
+.app-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E90FF; /* Dodger Blue like the image */
+  padding: 20px;
+}
+
+/* Card Style - WHITE BACKGROUND */
+.card {
+  background-color: white; /* White Form */
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 380px;
+  color: #333;
+  text-align: center;
+}
+
+/* Header */
+.header { margin-bottom: 25px; }
+.header h2 { 
+  font-size: 22px; 
+  font-weight: 600;
+  margin: 0;
+  color: #555;
+}
+
+/* Inputs */
+.input-group { margin-bottom: 15px; }
+
+/* Rounded Inputs - White with Light Grey Border */
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 25px; 
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.input-group input::placeholder {
+  color: #999;
+}
+
+.input-group input:focus {
+  border-color: #1E90FF;
+}
+
+/* Button - Blue Background, White Text */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  
+  background-color: #1E90FF; /* Match Background Blue */
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.btn:hover { 
+  opacity: 0.9;
+}
+
+.btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+/* Footer */
+.footer { margin-top: 20px; font-size: 13px; color: #888; }
+.link-btn {
+  background: none;
+  border: none;
+  color: #1E90FF;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.link-btn:hover { text-decoration: underline; }
+
+/* Error Message */
+.error-msg {
+  background: #ffcccc;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Animation */
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
